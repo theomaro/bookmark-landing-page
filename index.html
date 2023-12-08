@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="A Bookmark is a browser extension that is meant to help developer save, share and search visited sites. Learn about a useful browser extension that lets you bookmark and organize your favorite web pages, articles and journals easily on Chrome, Firefox and Opera."
+    />
+    <meta
+      name="keywords"
+      content="Bookmark, browser extensions, bookmark for Chrome, bookmark for Firefox, bookmark for Open, search bookmarks "
+    />
+
+    <title>Frontend Mentor | Bookmark landing page</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./dist/css/style.css" />
+  </head>
+  <body class="font-Rubik relative group">
+    <!-- HEADER -->
+    <header
+      id="header"
+      class="container py-10 lg:group-[.is-mobile]:relative lg:group-[.is-mobile]:bg-transparent group-[.is-mobile]:absolute group-[.is-mobile]:top-0 group-[.is-mobile]:bottom-0 group-[.is-mobile]:bg-VeryDarkBlue group-[.is-mobile]:bg-opacity-90 group-[.is-mobile]:border-2 group-[.is-mobile]:border-white z-10"
+    >
+      <nav class="flex justify-between items-center px-3 relative">
+        <!-- logo -->
+        <div>
+          <img
+            class="block group-[.is-mobile]:hidden lg:group-[.is-mobile]:block"
+            src="./images/logo-bookmark.svg"
+            alt="bookmark bland logo"
+          />
+          <img
+            class="hidden group-[.is-mobile]:block lg:group-[.is-mobile]:hidden"
+            src="./images/logo-bookmark-light.svg"
+            alt="bookmark bland logo"
+          />
+        </div>
+
+        <!-- Navbar -->
+        <div
+          id="nav-menu"
+          class="hidden group-[.is-mobile]:flex flex-col gap-y-10 absolute top-20 right-0 left-0 lg:flex lg:flex-row lg:items-center lg:gap-x-16 lg:gap-y-0 lg:relative lg:top-0"
+        >
+          <ul
+            class="flex flex-col items-center text-center px-4 lg:px-0 lg:gap-x-16 lg:flex-row"
+          >
+            <li
+              class="border-b border-b-gray border-t border-t-gray w-full py-4 lg:py-0 lg:border-0"
+            >
+              <a
+                href="#"
+                class="uppercase text-xl font-medium text-white hover:text-SoftRed transition ease-in-out delay-200 lg:font-light lg:text-base lg:text-black"
+                >features</a
+              >
+            </li>
+            <li class="border-b border-b-gray w-full py-4 lg:py-0 lg:border-0">
+              <a
+                href="#"
+                class="uppercase text-xl font-medium text-white hover:text-SoftRed transition ease-in-out delay-200 lg:font-light lg:text-base lg:text-black"
+                >pricing</a
+              >
+            </li>
+            <li class="border-b border-b-gray w-full py-4 lg:py-0 lg:border-0">
+              <a
+                href="#"
+                class="uppercase text-xl font-medium text-white hover:text-SoftRed transition ease-in-out delay-200 lg:font-light lg:text-base lg:text-black"
+                >contact</a
+              >
+            </li>
+          </ul>
+
+          <button
+            class="uppercase tracking-[.125rem] text-white text-xl font-Rubik font-medium py-3 px-8 shadow-lg rounded-md border-2 border-white lg:text-base lg:py-2 transition ease-in-out delay-100 lg:bg-SoftRed hover:lg:bg-white hover:lg:text-SoftRed hover:lg:border-2 hover:lg:border-SoftRed"
+          >
+            Login
+          </button>
+
+          <div
+            class="absolute -bottom-full right-0 left-0 flex items-center justify-center gap-x-10 lg:hidden"
+          >
+            <a href="#">
+              <img src="./images/icon-facebook.svg" alt="facebook brand logo" />
+            </a>
+            <a href="#">
+              <img src="./images/icon-twitter.svg" alt="twitter brand logo" />
+            </a>
+          </div>
+        </div>
+
+        <!-- Hambuger menu -->
+        <button
+          type="button"
+          id="humberger-menu"
+          class="group flex flex-col gap-y-1 lg:hidden"
+        >
+          <span
+            class="menu-icon block bg-black bg-opacity-80 w-6 h-1 group-[.is-open]:rotate-45 group-[.is-open]:translate-y-1 group-[.is-open]:bg-white"
+          ></span>
+          <span
+            class="menu-icon block bg-black bg-opacity-80 w-6 h-1 group-[.is-open]:hidden"
+          ></span>
+          <span
+            class="menu-icon block bg-black bg-opacity-80 w-6 h-1 group-[.is-open]:-rotate-45 group-[.is-open]:-translate-y-1 group-[.is-open]:bg-white"
+          ></span>
+        </button>
+      </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main class="group-[.is-mobile]:pt-28">
+      <!-- Hero Section -->
+      <section
+        class="container py-10 lg:mt-16 overflow-hidden xl:overflow-visible"
+      >
+        <div
+          class="flex flex-col gap-16 md:flex-row-reverse md:gap-4 md:justify-between lg:mt-16 relative"
+        >
+          <!-- Hero Image -->
+          <div class="md:w-2/3">
+            <img
+              src="./images/illustration-hero.svg"
+              alt="bookmark dashboard"
+              class="md:-mt-8 lg:-mt-14"
+            />
+
+            <div
+              class="bg-SoftBlue rounded-l-full h-48 w-96 absolute top-16 -right-24 -z-10 lg:h-60 lg:w-1/2 xl:w-[60%] xl:-right-52"
+            ></div>
+          </div>
+
+          <!-- Hero Content -->
+          <article class="flex flex-col gap-y-8 px-3">
+            <div
+              class="flex flex-col items-center gap-6 text-center animate-fade-out md:items-start md:text-start"
+            >
+              <h1
+                class="text-3xl text-VeryDarkBlue leading-snug font-medium max-w-sm"
+              >
+                A Simple Bookmark Manager
+              </h1>
+              <p
+                class="text-GrayishBlue leading-relaxed max-w-[19rem] md:text-md md:max-w-[30rem] lg:max-w-[35rem]"
+              >
+                A clean and simple interface to organize your favourite
+                websites. Open a new browser tab and see your sites load
+                instantly. Try it for free.
+              </p>
+            </div>
+
+            <div
+              class="flex items-center justify-center gap-4 md:justify-start"
+            >
+              <button
+                class="rounded-md shadow-md px-2 py-3 bg-SoftBlue text-white text-center font-medium border-2 border-transparent transition-all hover:outline-none hover:border-2 hover:bg-white hover:text-SoftBlue hover:border-GrayishBlue md:p-3"
+              >
+                Get it on Chrome
+              </button>
+              <button
+                class="rounded-md shadow-md px-2 py-3 bg-white text-GrayishBlue text-center font-medium border-2 border-transparent transition-all hover:outline-none hover:border-2 hover:border-GrayishBlue md:p-3"
+              >
+                Get it on Firefox
+              </button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Features Section -->
+      <section class="container py-10 mt-16">
+        <!-- Heading -->
+        <article class="flex flex-col items-center space-y-2 text-center mb-10">
+          <h2 class="text-VeryDarkBlue text-2xl font-medium">Features</h2>
+          <p
+            class="text-GrayishBlue leading-loose max-w-[21rem] md:max-w-[29rem]"
+          >
+            Our aim is to make it quick and easy for you to access your
+            favourite websites. Your bookmarks sync between your devices so you
+            can access them on the go.
+          </p>
+        </article>
+
+        <!-- Navigation Tabs -->
+        <div class="px-8 mb-32">
+          <ul class="flex flex-col text-center md:flex-row md:justify-center">
+            <li
+              class="border-b border-b-gray border-t border-t-gray md:border-t-0"
+            >
+              <button
+                class="tab_btn inline-block py-4 text-lg md:px-6 text-VeryDarkBlue border-b-4 border-SoftRed transition ease-in delay-100"
+              >
+                Simple Bookmarking
+              </button>
+            </li>
+            <li class="border-b border-b-gray">
+              <button
+                class="tab_btn inline-block py-4 text-lg md:px-6 text-GrayishBlue transition ease-in delay-100 hover:text-SoftRed"
+              >
+                Speedy Searching
+              </button>
+            </li>
+            <li class="border-b border-b-gray">
+              <button
+                class="tab_btn inline-block py-4 text-lg md:px-6 text-GrayishBlue transition ease-in delay-100 hover:text-SoftRed"
+              >
+                Easy Sharing
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Features -->
+        <div class="px-8">
+          <!-- Feature 1 -->
+          <article
+            class="feature flex flex-col items-center gap-y-24 md:flex-row md:items-start md:justify-between lg:gap-y-32 relative"
+          >
+            <div class="md:w-1/2 lg:-mt-14 animate-fade">
+              <img
+                src="./images/illustration-features-tab-1.svg"
+                alt="Bookmark in one click"
+              />
+
+              <div
+                class="bg-SoftBlue rounded-r-full h-48 w-96 absolute top-10 -left-32 -z-10 lg:h-64 lg:w-[55%] lg:top-12 xl:w-2/3 xl:-left-56"
+              ></div>
+            </div>
+
+            <div
+              class="flex flex-col items-center gap-y-3 text-center animate-fade-out md:items-start md:text-start md:ms-16 lg:ms-0"
+            >
+              <h3 class="text-2xl text-VeryDarkBlue font-medium">
+                Bookmark in one click
+              </h3>
+              <p
+                class="text-GrayishBlue leading-relaxed max-w-xs mb-6 md:max-w-sm"
+              >
+                Organize your bookmarks however you like. Our simple
+                drag-and-drop interface gives you complete control over how you
+                manage your favourite sites.
+              </p>
+              <button
+                class="w-full rounded-md shadow-md bg-SoftBlue text-white text-center font-medium border-2 border-transparent transition-all hover:outline-none hover:border-2 hover:bg-white hover:text-GrayishBlue hover:border-GrayishBlue p-3 md:px-6 md:w-auto"
+              >
+                More Info
+              </button>
+            </div>
+          </article>
+
+          <!-- Feature 2 -->
+          <article
+            class="feature hidden flex-col items-center gap-y-24 md:flex-row md:items-start md:justify-between relative"
+          >
+            <div class="md:w-1/2 lg:-mt-14 animate-fade">
+              <img
+                src="./images/illustration-features-tab-2.svg"
+                alt="Intelligent search"
+              />
+
+              <div
+                class="bg-SoftBlue rounded-r-full h-48 w-96 absolute top-16 -left-32 -z-10 md:top-20 lg:h-64 lg:w-[55%] lg:top-28 xl:w-2/3 xl:-left-56"
+              ></div>
+            </div>
+
+            <div
+              class="flex flex-col items-center gap-y-3 text-center animate-fade-out md:items-start md:text-start md:ms-16 lg:ms-0"
+            >
+              <h3 class="text-2xl text-VeryDarkBlue font-medium">
+                Intelligent search
+              </h3>
+              <p
+                class="text-GrayishBlue leading-relaxed max-w-xs mb-6 md:max-w-sm"
+              >
+                Our powerful search feature will help you find saved sites in no
+                time at all. No need to trawl through all of your bookmarks.
+              </p>
+              <button
+                class="w-full rounded-md shadow-md bg-SoftBlue text-white text-center font-medium border-2 border-transparent transition-all hover:outline-none hover:border-2 hover:bg-white hover:text-GrayishBlue hover:border-GrayishBlue p-3 md:px-6 md:w-auto"
+              >
+                More Info
+              </button>
+            </div>
+          </article>
+
+          <!-- Feature 3 -->
+          <article
+            class="feature hidden flex-col items-center gap-y-24 md:flex-row md:items-start md:justify-between relative"
+          >
+            <div class="md:w-1/2 lg:-mt-14 animate-fade">
+              <img
+                src="./images/illustration-features-tab-3.svg"
+                alt="Share your bookmarks"
+              />
+
+              <div
+                class="bg-SoftBlue rounded-r-full h-48 w-96 absolute top-16 -left-32 -z-10 md:top-20 lg:h-64 lg:w-[55%] lg:top-28 xl:w-2/3 xl:-left-56"
+              ></div>
+            </div>
+
+            <div
+              class="flex flex-col items-center gap-y-3 text-center animate-fade-out md:items-start md:text-start md:ms-16 lg:ms-0"
+            >
+              <h3 class="text-2xl text-VeryDarkBlue font-medium">
+                Share your bookmarks
+              </h3>
+              <p
+                class="text-GrayishBlue leading-relaxed max-w-xs mb-6 md:max-w-sm"
+              >
+                Easily share your bookmarks and collections with others. Create
+                a shareable link that you can send at the click of a button.
+              </p>
+              <button
+                class="w-full rounded-md shadow-md bg-SoftBlue text-white text-center font-medium border-2 border-transparent transition-all hover:outline-none hover:border-2 hover:bg-white hover:text-GrayishBlue hover:border-GrayishBlue p-3 md:px-6 md:w-auto"
+              >
+                More Info
+              </button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Downloads -->
+      <section class="container py-10 mt-8">
+        <!-- Heading -->
+        <article class="flex flex-col items-center space-y-2 text-center mb-16">
+          <h2 class="text-VeryDarkBlue text-2xl font-medium">
+            Download the extension
+          </h2>
+          <p
+            class="text-GrayishBlue leading-loose max-w-[20rem] md:max-w-[29rem]"
+          >
+            We've got more browsers in the pipeline. Please do let us know if
+            you've got a favourite you'd like us to prioritize.
+          </p>
+        </article>
+
+        <div
+          class="flex flex-col gap-16 px-8 md:flex-row md:flex-wrap lg:flex-nowrap lg:gap-8"
+        >
+          <!-- Feature #1 -->
+          <article
+            class="shadow-xl rounded-lg py-6 min-w-[300px] transition-all hover:transform hover:scale-110 md:mb-32 lg:mb-16"
+          >
+            <!-- Image -->
+            <div class="flex justify-center mb-8">
+              <img src="./images/logo-chrome.svg" alt="Chrome brand logo" />
+            </div>
+
+            <!-- Content -->
+            <div class="text-center mb-8">
+              <h3 class="text-xl text-VeryDarkBlue font-medium mb-2">
+                Add to Chrome
+              </h3>
+              <p class="text-GrayishBlue">Minimum version 62</p>
+            </div>
+
+            <!-- Separator -->
+            <div
+              style="background-image: url(./images/bg-dots.svg)"
+              class="h-3 w-full bg-repeat-x overflow-x-hidden mb-3"
+            ></div>
+
+            <!-- Download Button -->
+            <div class="px-6">
+              <button
+                class="w-full rounded-md shadow-md bg-SoftBlue text-white text-center font-medium border-2 border-transparent transition-all hover:outline-none hover:border-2 hover:bg-white hover:text-SoftBlue hover:border-SoftBlue py-3"
+              >
+                Add & Install Extension
+              </button>
+            </div>
+          </article>
+
+          <!-- Feature #2 -->
+          <article
+            class="shadow-xl rounded-lg py-6 min-w-[300px] transition-all hover:transform hover:scale-110 md:mt-32 lg:my-8"
+          >
+            <!-- Image -->
+            <div class="flex justify-center mb-8">
+              <img src="./images/logo-firefox.svg" alt="Firefox brand logo" />
+            </div>
+
+            <!-- Content -->
+            <div class="text-center mb-8">
+              <h3 class="text-xl text-VeryDarkBlue font-medium mb-2">
+                Add to Firefox
+              </h3>
+              <p class="text-GrayishBlue">Minimum version 55</p>
+            </div>
+
+            <!-- Separator -->
+            <div
+              style="background-image: url(./images/bg-dots.svg)"
+              class="h-3 w-full bg-repeat-x overflow-x-hidden mb-3"
+            ></div>
+
+            <!-- Download Button -->
+            <div class="px-6">
+              <button
+                class="w-full rounded-md shadow-md bg-SoftBlue text-white text-center font-medium border-2 border-transparent transition-all hover:outline-none hover:border-2 hover:bg-white hover:text-SoftBlue hover:border-SoftBlue py-3"
+              >
+                Add & Install Extension
+              </button>
+            </div>
+          </article>
+
+          <!-- Feature #3 -->
+          <article
+            class="shadow-xl rounded-lg py-6 min-w-[300px] transition-all hover:transform hover:scale-110 md:-mt-24 lg:mt-16"
+          >
+            <!-- Image -->
+            <div class="flex justify-center mb-8">
+              <img src="./images/logo-opera.svg" alt="Opera brand logo" />
+            </div>
+
+            <!-- Content -->
+            <div class="text-center mb-8">
+              <h3 class="text-xl text-VeryDarkBlue font-medium mb-2">
+                Add to Opera
+              </h3>
+              <p class="text-GrayishBlue">Minimum version 46</p>
+            </div>
+
+            <!-- Separator -->
+            <div
+              style="background-image: url(./images/bg-dots.svg)"
+              class="h-3 w-full bg-repeat-x overflow-x-hidden mb-3"
+            ></div>
+
+            <!-- Download Button -->
+            <div class="px-6">
+              <button
+                class="w-full rounded-md shadow-md bg-SoftBlue text-white text-center font-medium border-2 border-transparent transition-all hover:outline-none hover:border-2 hover:bg-white hover:text-SoftBlue hover:border-SoftBlue py-3"
+              >
+                Add & Install Extension
+              </button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Frequently Asked Questions -->
+      <section class="container py-10 mt-16">
+        <!-- Heading -->
+        <article class="flex flex-col items-center space-y-2 text-center mb-16">
+          <h2
+            class="text-VeryDarkBlue text-2xl font-medium max-w-xs md:max-w-sm"
+          >
+            Frequently Asked Questions
+          </h2>
+          <p
+            class="text-GrayishBlue leading-loose max-w-[20rem] md:max-w-[29rem]"
+          >
+            Here are some of our FAQs. If you have any other questions you'd
+            like answered please feel free to email us.
+          </p>
+        </article>
+
+        <!-- FAQs -->
+        <div class="flex flex-col md:max-w-2xl md:mx-auto">
+          <!-- FAQ #1 -->
+          <article>
+            <dl class="border-b border-b-gray mx-7">
+              <!-- Question 1 -->
+              <dt
+                class="question py-6 flex justify-between items-center text-VeryDarkBlue transition-all hover:text-SoftRed cursor-pointer"
+              >
+                <span>What is Bookmark?</span>
+                <ion-icon
+                  name="chevron-down-outline"
+                  class="chevron-icon text-SoftBlue"
+                  style="font-size: 24px"
+                  alt="chevron down"
+                ></ion-icon>
+              </dt>
+              <!-- Answer 1 -->
+              <dd
+                class="answer hidden text-GrayishBlue leading-loose pb-8 animate-collapse"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                tincidunt justo eget ultricies fringilla. Phasellus blandit
+                ipsum quis quam ornare mattis.
+              </dd>
+            </dl>
+          </article>
+
+          <!-- FAQ #2 -->
+          <article>
+            <dl class="border-b border-b-gray mx-7">
+              <!-- Question 2 -->
+              <dt
+                class="question py-6 flex justify-between items-center text-VeryDarkBlue transition-all hover:text-SoftRed cursor-pointer"
+              >
+                <span>How can I request a new browser?</span>
+                <ion-icon
+                  name="chevron-down-outline"
+                  class="chevron-icon text-SoftBlue"
+                  style="font-size: 24px"
+                  alt="chevron down"
+                ></ion-icon>
+              </dt>
+
+              <!-- Answer 2 -->
+              <dd
+                class="answer hidden text-GrayishBlue leading-loose pb-8 animate-collapse"
+              >
+                Vivamus luctus eros aliquet convallis ultricies. Mauris augue
+                massa, ultricies non ligula. Suspendisse imperdiet. Vivamus
+                luctus eros aliquet convallis ultricies. Mauris augue massa,
+                ultricies non ligula. Suspendisse imperdie tVivamus luctus eros
+                aliquet convallis ultricies. Mauris augue massa, ultricies non
+                ligula. Suspendisse imperdiet.
+              </dd>
+            </dl>
+          </article>
+
+          <!-- FAQ #3 -->
+          <article>
+            <dl class="border-b border-b-gray mx-7">
+              <!-- Question 3 -->
+              <dt
+                class="question py-6 flex justify-between items-center text-VeryDarkBlue transition-all hover:text-SoftRed cursor-pointer"
+              >
+                <span>Is there a mobile app?</span>
+                <ion-icon
+                  name="chevron-down-outline"
+                  class="chevron-icon text-SoftBlue"
+                  style="font-size: 24px"
+                  alt="chevron down"
+                ></ion-icon>
+              </dt>
+              <!-- Answer 3 -->
+              <dd
+                class="answer hidden text-GrayishBlue leading-loose pb-8 animate-collapse"
+              >
+                Sed consectetur quam id neque fermentum accumsan. Praesent
+                luctus vestibulum dolor, ut condimentum urna vulputate eget.
+                Cras in ligula quis est pharetra mattis sit amet pharetra purus.
+                Sed sollicitudin ex et ultricies bibendum.
+              </dd>
+            </dl>
+          </article>
+
+          <!-- FAQ #4 -->
+          <article>
+            <dl class="border-b border-b-gray mx-7">
+              <!-- Question 4 -->
+              <dt
+                class="question py-6 flex justify-between items-center text-VeryDarkBlue transition-all hover:text-SoftRed cursor-pointer"
+              >
+                <span>What about other Chromium browsers?</span>
+                <ion-icon
+                  name="chevron-down-outline"
+                  class="chevron-icon text-SoftBlue"
+                  style="font-size: 24px"
+                  alt="chevron down"
+                ></ion-icon>
+              </dt>
+              <!-- Answer 4 -->
+              <dd
+                class="answer hidden text-GrayishBlue leading-loose pb-8 animate-collapse"
+              >
+                Integer condimentum ipsum id imperdiet finibus. Vivamus in
+                placerat mi, at euismod dui. Aliquam vitae neque eget nisl
+                gravida pellentesque non ut velit.
+              </dd>
+            </dl>
+          </article>
+        </div>
+
+        <div class="flex justify-center mt-14">
+          <button
+            class="rounded-md shadow-md bg-SoftBlue text-white text-center font-medium border-2 border-transparent transition-all hover:outline-none hover:border-2 hover:bg-white hover:text-SoftBlue hover:border-SoftBlue py-3 px-6"
+          >
+            More Info
+          </button>
+        </div>
+      </section>
+
+      <!-- newsletter -->
+      <section class="py-10 mt-8 bg-SoftBlue px-6 m-1 mb-0">
+        <div class="md:max-w-[23rem] md:mx-auto">
+          <article
+            class="flex flex-col items-center gap-2 text-white text-center py-8 md:gap-5"
+          >
+            <span class="text-sm tracking-[.25rem] uppercase"
+              >35,000+ already joined</span
+            >
+            <h3 class="text-2xl font-medium max-w-xs">
+              Stay up-to-date with what we're doing
+            </h3>
+          </article>
+
+          <form id="newsletter-form">
+            <div
+              class="flex flex-col space-y-6 md:space-y-0 md:flex-row md:space-x-3"
+            >
+              <div class="flex-1 group">
+                <input
+                  id="newsletter-input"
+                  type="text"
+                  placeholder="example@gmail.com"
+                  class="w-full p-3 text-VeryDarkBlue border-2 border-transparent outline-none rounded-md md:py-2 group-[.is-error]:rounded-b-none group-[.is-error]:border-SoftRed group-[.is-success]:rounded-b-none group-[.is-success]:border-VeryDarkBlue"
+                />
+
+                <div
+                  class="hidden bg-SoftRed bg-opacity-95 text-white text-xs italic p-1 rounded-b-md group-[.is-error]:bg-SoftRed group-[.is-error]:block group-[.is-success]:block group-[.is-success]:bg-VeryDarkBlue"
+                >
+                  <p class="error"></p>
+                </div>
+              </div>
+              <div>
+                <button
+                  type="submit"
+                  class="w-full p-3 bg-SoftRed text-white font-medium rounded-md shadow-md border-2 border-transparent transition ease-in-out delay-200 hover:border-2 hover:border-SoftRed hover:bg-white hover:text-SoftRed md:p-2"
+                >
+                  Contact Us
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="py-10 bg-VeryDarkBlue m-1 mt-0 lg:py-5">
+      <article
+        class="flex flex-col items-center space-y-10 py-3 lg:flex-row md:gap-x-20 lg:space-y-0 lg:max-w-4xl lg:mx-auto xl:max-w-6xl"
+      >
+        <div>
+          <img
+            src="./images/logo-bookmark-light.svg"
+            alt="light bookmark brand logo"
+            class="lg:h-6"
+          />
+        </div>
+
+        <ul
+          class="space-y-8 lg:flex lg:items-center lg:space-y-0 lg:flex-1 lg:space-x-12"
+        >
+          <li>
+            <a
+              href="#"
+              class="uppercase text-white tracking-widest transition ease-in-out delay-200 hover:text-SoftRed"
+              >Features</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="uppercase text-white tracking-widest transition ease-in-out delay-200 hover:text-SoftRed"
+              >pricing</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="uppercase text-white tracking-widest transition ease-in-out delay-200 hover:text-SoftRed"
+              >contact</a
+            >
+          </li>
+        </ul>
+
+        <div class="flex gap-8">
+          <img src="./images/icon-facebook.svg" alt="facebook brand logo" />
+          <img src="./images/icon-twitter.svg" alt="twitter brand logo" />
+        </div>
+      </article>
+
+      <p class="text-xs text-center text-gray inline-block w-full mx-auto mt-8">
+        Challenge by
+        <a
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          class="italic text-SoftBlue transition ease-in-out delay-200 hover:text-SoftRed visited:text-white"
+          >Frontend Mentor</a
+        >. Coded by
+        <a
+          href="https://github.com/theo-pombe"
+          target="_blank"
+          class="italic text-SoftRed transition ease-in-out delay-200 hover:text-SoftBlue visited:text-white"
+          >Theo Pombe</a
+        >.
+      </p>
+    </footer>
+
+    <!-- Ionicons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- Custom Scripts -->
+    <script src="./dist/js/index.js"></script>
+  </body>
+</html>
