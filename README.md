@@ -101,4 +101,4 @@ Some of the areas that I wish to continue focusing on in future projects are:-
 ## Acknowledgments
 
 - Special thanks to my friend [Adam](https://www.twitter.com/adamShabanih) for encouragement and support
-- Much credit to [John Komarnicki](https://twitter.com/john_komarnicki)
+- Much credit to [Kamlesh](https://www.frontendmentor.io/profile/Kamlesh0007) and [John Komarnicki](https://twitter.com/john_komarnicki)
