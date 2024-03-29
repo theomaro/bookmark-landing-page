@@ -43,7 +43,10 @@ For this challenge:
 
 - [Solution](https://www.frontendmentor.io/solutions/mobilefirst-design-landing-page-using-tailwind-and-typescript-TUaPRdFHJM) submitted
 - Preview [Live Site](https://the-bookmark-landing-page.netlify.app/)
-- clone this project ```zsh $ git clone https://github.com/theo-pombe/bookmark-landing-page.git```
+- clone this project
+  ```sh
+  $ git clone https://github.com/theo-pombe/bookmark-landing-page.git
+  ```
 
 ## My process
 
